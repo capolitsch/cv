@@ -68,6 +68,21 @@
 #3 & #4 \\
 \end{tabular*}}
 
+\newcommand{\subheadingthreelines}[6]{
+\begin{tabular*}{6.45in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+#1 & #2 \\
+#3 & #4 \\
+#5 & #6 \\
+\end{tabular*}}
+
+\newcommand{\subheadingfourlines}[8]{
+\begin{tabular*}{6.45in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+#1 & #2 \\
+#3 & #4 \\
+#5 & #6 \\
+#7 & #8 \\
+\end{tabular*}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Begin document
@@ -79,14 +94,17 @@
 % CV heading
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tabular*}{6.65in}{l@{\extracolsep{\fill}}r}
-{\Large\bf Collin A. Politsch} & \today
+{\Large\bf Collin A. Politsch} & 
 \end{tabular*}
 
 \begin{tabular*}{6.65in}{l@{\extracolsep{\fill}}r}
-Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail.com \\
-162 5th Avenue, New York, NY 10010 & \myhref{https://collinpolitsch.com}{https://collinpolitsch.com}
+Kavli Institute for Cosmology & \today \\
+University of Cambridge & collin.politsch@ast.cam.ac.uk \\
+Madingley Road, Cambridge, CB3 0HA & \myhref{https://collinpolitsch.com}{https://collinpolitsch.com} \\
+United Kingdom & %\myhref{https://www.ast.cam.ac.uk/people/collin.politsch}{ast.cam.ac.uk/$\sim$collin.politsch}
 \end{tabular*}
 
+\vspace{-0.1cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Research Interests}
@@ -103,11 +121,22 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 \heading{Academic Positions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}[leftmargin=0.4cm]
-\item[] \hspace{-2ex}\subheadingtwolines{{\bf Flatiron Institute}, Center for Computational Astrophysics}{New York, NY}{{\it Guest Researcher}}{August 2021 -- present}
-\item[] \hspace{-2ex}\subheadingtwolines{{\bf Carnegie Mellon University}, Machine Learning Department}{Pittsburgh, PA}{\emph{Postdoctoral Fellow}, Supervisor: Ryan J. Tibshirani}{July 2020 -- July 2021}
+\item[] \hspace{-2ex}\subheadingthreelines{{\bf University of Cambridge}}{Cambridge, U.K.}{Institute of Astronomy and Kavli Institute for Cosmology}{Sep 2022 -- present}{{\it Postdoctoral Research Associate}}{}
+\vspace{-0.025cm}
+%\item[] \hspace{-2ex}\subheadingtwolines{{\bf Flatiron Institute}, Center for Computational Astrophysics}{New York, NY}{{\it Guest Researcher}}{July 2021 -- May 2022}
+\item[] \hspace{-2ex}\subheadingthreelines{{\bf Carnegie Mellon University}}{Pittsburgh, PA}{Machine Learning Department}{July 2020 -- Aug 2021}{\it Postdoctoral Fellow}{}
 \end{itemize}
 \vspace{-0.25cm}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\heading{Other Academic Affiliations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{itemize}[leftmargin=0.4cm]
+%\item[] \hspace{-2ex}\subheadingthreelines{{\bf Flatiron Institute}}{New York, NY}{Center for Computational Astrophysics}{July 2021 -- May 2022}{{\it Guest Researcher}}{}
+%\end{itemize}
+%\vspace{-0.15cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Education}
@@ -120,7 +149,7 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 	\item[] \hspace{-2ex}Dissertation: {\it Statistical Astrophysics: From Extrasolar Planets to the Large-scale Structure}\\
 	\vspace{-.02cm}
 	\hspace{11.17ex}{\it of the Universe}
-	\item[] \hspace{-2ex}Award: Umesh K. Gavaskar Memorial Award for Best Ph.D. Dissertation (2020-'21)
+	\item[] \hspace{-2ex}Award: Umesh K. Gavaskar Memorial Award for Best Ph.D. Dissertation
 	\item[] \hspace{-2ex}Advisors: Larry Wasserman, Jessi Cisewski-Kehe, Rupert A.C. Croft
 \end{enumerate}
 
@@ -132,7 +161,7 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 	\item[] \hspace{-2ex}Advisors: Larry Wasserman, Jessi Cisewski-Kehe, Rupert A.C. Croft
 \end{enumerate}
 
-\item[] \hspace{-2ex}\subheadingtwolines{{\bf University of Kansas}}{Lawrence, KS}{B.Sc. in Mathematics (With Honors)}{2014}
+\item[] \hspace{-2ex}\subheadingtwolines{{\bf University of Kansas}}{Lawrence, KS}{B.Sc. in Mathematics (With Honors), Minor in Latin}{2014}
 \vspace{-0.1cm}
 \begin{enumerate}
 	\item[] \hspace{-2ex}Honors Thesis: {\it On Discrete-Time Linear Quadratic Control}
@@ -179,6 +208,14 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 
 \vspace{0.3cm}
 
+\item {\bf Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States} 
+\item[] E. Y. Cramer, E. L. Ray, V. K. Lopez, et al.
+\item[] {\it Proceedings of the National Academy of Sciences}, Volume 119, Issue 15, April 2022.
+\item[] \href{https://www.pnas.org/doi/10.1073/pnas.2113561119}{Publisher}. \href{https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3}{medRxiv}.
+\href{https://covid19forecasthub.org/}{COVID-19 Forecast Hub}.
+
+\vspace{0.3cm}
+
 \item {\bf An Open Repository of Real-Time COVID-19 Indicators} 
 \item[] A. Reinhart, L. Brooks, M. Jahja, A. Rumack, J. Tang, et al.
 \item[] {\it Proceedings of the National Academy of Sciences}, Volume 118, Issue 51, December 2021.
@@ -189,21 +226,16 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 
 \vspace{0.3cm}
 
-\item {\bf Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US} 
-\item[] E. Y. Cramer, E. L. Ray, V. K. Lopez, et al.
-\item[] Submitted to {\it Proceedings of the National Academy of Sciences}.
-\item[] \href{https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3}{medRxiv}.
-\href{https://covid19forecasthub.org/}{COVID-19 Forecast Hub}.
-
-\vspace{0.3cm}
 
 \item {\bf Augmenting Adjusted Plus-Minus in Soccer with FIFA Ratings}
 \item[] F. Matano, L. F. Richardson, T. Pospisil, \underline{C. A. Politsch}, J. Qin
-\item[] {Submitted to {\it Journal of Quantitative Analysis in Sports}.
+\item[] {To appear in {\it Journal of Quantitative Analysis in Sports}.
 \item[] \href{https://arxiv.org/abs/1810.08032}{arXiv}.
-\href{http://intraocular.net/}{Up-to-date player ratings}}.
+\href{http://intraocular.net/}{Sports Analytics Website}}.
 \end{enumerate}
 
+
+\vspace{-0.2cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Other Publications}
@@ -217,6 +249,10 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 \end{enumerate}
 
 
+
+\vspace{-0.2cm}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Awards and Honors}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,11 +260,11 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 \begin{itemize}[leftmargin=0.6cm]
 \item 2020-'21 Umesh K. Gavaskar Memorial Award for Best Ph.D. Dissertation in Statistics and Data Science at Carnegie Mellon University.
 
-\vspace{0.05cm}
+\vspace{0.025cm}
 
 \item Finalist for best paper in the 2020 ASA Astrostatistics Student Paper Competition, sponsored by the Astrostatistics Interest Group.
 
-\vspace{0.05cm}
+\vspace{-0.025cm}
 
 \item 2nd Place: The Data Open 2018 at CMU, presented by Citadel and Correlation One.
 \begin{itemize}
@@ -236,7 +272,7 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 \item 300+ applications, $\sim$125 selected to compete for \$25,000 in prizes
 \end{itemize}
 
-\vspace{0.05cm}
+\vspace{-0.01cm}
 
 \item 2nd Place: 2017 NBA Basketball Analytics Hackathon, New York, NY, hosted by the NBA.
 \begin{itemize}
@@ -244,15 +280,13 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 \item 900+ applications, $\sim$200 selected to compete for $\sim$\$20,000 equivalent in tickets, etc.
 \end{itemize}
 
-\vspace{0.05cm}
+\vspace{-0.025cm}
 
 \item 2nd Place: The Data Open 2017 at CMU, presented by Citadel and Correlation One.
 \begin{itemize}
 \vspace{-0.15cm}
 \item 550+ applications, $\sim$125 selected to compete for \$25,000 in prizes
 \end{itemize}
-
-\vspace{0.05cm}
 
 \item 3rd Place: 2017 CMU BrainHub NeuroHackathon, sponsored by Google.
 \begin{itemize}
@@ -342,21 +376,87 @@ Flatiron Institute, Center for Computational Astrophysics & collinpolitsch@gmail
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-0.1cm}
 
-\begin{itemize}[leftmargin=0.225cm, itemsep=-0.05cm]
-\item[] R package \textsf{trendfiltering}: \emph{The state-of-the-art method for denoising 1D signals}
+\begin{itemize}[leftmargin=0.75cm, itemsep=-0.05cm]
+\item R package \textsf{trendfiltering}: \emph{The state-of-the-art method for denoising 1D signals}
 \item[] Available at \url{https://capolitsch.github.io/trendfiltering}
 \vspace{0.25cm}
-\item[] R package \textsf{SALTdenoiseR}: \emph{Statistical software for the SALT Observatory} 
+\item R package \textsf{SALTdenoiseR}: \emph{Statistical software for the SALT Observatory} 
 \item[] Available at \url{https://capolitsch.github.io/SALTdenoiseR}
 \vspace{0.25cm}
-\item[] R package \textsf{trendfilteringSupp}: \emph{Optimal one-dimensional data analysis with trend filtering} 
+\item R package \textsf{trendfilteringSupp}: \emph{Optimal one-dimensional data analysis with trend filtering} 
 \item[] Available at \url{https://github.com/capolitsch/trendfilteringSupp}
 \vspace{0.25cm}
-\item[] R package \textsf{aardvark}: \emph{COVID-19 forecasters from Carnegie Mellon's Delphi research group} 
+\item R package \textsf{aardvark}: \emph{COVID-19 forecasters from Carnegie Mellon's Delphi research group} 
 \item[] Available at \texttt{\href{https://github.com/cmu-delphi/covid-19-forecast/tree/main/forecasters/aardvark}{https://github.com/cmu-delphi/covid-19-forecast}}
 \end{itemize}
 
 \vspace{-0.1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Teaching}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.05cm}
+
+\begin{itemize}[leftmargin=0.4cm]
+\item[] \hspace{-2ex}\subheadingtwolines{\bf Carnegie Mellon University}{}{\it Instructor}{}
+\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[$\bullet$] {\it Introduction to Programming in R}. Summer 2015. \hfill B.Sc. course
+\end{itemize}
+
+
+\vspace{0.05cm}
+\item[] \hspace{-1.5ex}{\it Guest Lecturer} 
+\vspace{-0.075cm}
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[$\bullet$] 36-401: \emph{Modern Regression} \hfill B.Sc. course
+\begin{itemize}
+\item[--] Lecture: ``Introduction to Programming in R and R Markdown.'' Aug. 2017.
+\end{itemize}
+\item[$\bullet$]36-217: \emph{Probability Theory and Random Processes} \hfill B.Sc. course
+\begin{itemize}
+\item[--] Lecture: ``Introduction to Markov Chains.'' Nov. 2015.
+\end{itemize}
+\end{itemize}
+
+
+\vspace{0.02cm}
+\item[] \hspace{-2ex}\subheadingoneline{\it Head Graduate Teaching Assistant}{06/2015 -- 12/2018}
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[$\bullet$]10/36-702: \hspace{1.5ex}\emph{Statistical Machine Learning} \hfill Ph.D. course
+\item[$\bullet$]10/36-705: \hspace{0.5ex} \emph{Intermediate Statistics} \hfill Ph.D. course
+\item[$\bullet$]36-618: \hspace{5ex}\emph{Experimental Design \& Time Series} \hfill M.Sc. course
+\item[$\bullet$]36-467/667:\hspace{0.25ex}  \emph{Special Topics: Data over Space \& Time} \hfill B.Sc./M.Sc. course
+\item[$\bullet$]36-401/607: \hspace{0.25ex}\emph{Modern Regression} \hfill B.Sc./M.Sc. course
+\item[$\bullet$]36-402/608: \hspace{0.25ex}\emph{Advanced Methods for Data Analysis} \hfill B.Sc./M.Sc. course
+\item[$\bullet$]36-225: \hspace{5ex}\emph{Introduction to Probability Theory} \hfill B.Sc. course
+\item[$\bullet$]36-226: \hspace{5ex}\emph{Introduction to Statistical Inference} \hfill B.Sc. course
+\item[$\bullet$]36-217: \hspace{5ex}\emph{Probability Theory and Random Processes} \hfill B.Sc. course
+\end{itemize}
+
+\vspace{0.05cm}
+
+\item[] \hspace{-2.2ex}\subheadingoneline{\it Graduate Teaching Assistant}{01/2015 -- 05/2015}
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[$\bullet$]36-402/608: \hspace{0.25ex}\emph{Advanced Methods for Data Analysis} \hfill B.Sc./M.Sc. course
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Advising}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.05cm}
+
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[]  \hspace{-1.5ex}{\it Undergraduate students}
+\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
+\item[$\bullet$] \href{https://benjaminleroy.github.io/}{Benjamin LeRoy} (UC Berkeley), Summer Undergraduate Research Experience in Statistics, Dept. of Statistics \& Data Science, Carnegie Mellon University, Summer 2015. ``Dynamical Mass Measurements of Galaxy Clusters.'' (Received Ph.D. in Statistics \& Data Science from CMU in 2021).
+\end{itemize}
+\end{itemize}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Experience}
@@ -460,49 +560,6 @@ I completed an end-to-end project which culminated in a new personalized ranking
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\heading{Teaching and Advising}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{0.05cm}
-
-\begin{itemize}[leftmargin=0.4cm]
-\item[] \hspace{-2ex}\subheadingtwolines{\bf Carnegie Mellon University}{}{\it Graduate Teaching Assistant}{January 2015 -- December 2018}
-
-\begin{itemize}[leftmargin=0.4cm, rightmargin=0.3cm]
-\item[--]10/36-702: \hspace{1.5ex}\emph{Statistical Machine Learning} \hfill Head TA, PhD course
-\item[--]10/36-705: \hspace{0.5ex} \emph{Intermediate Statistics} \hfill Head TA, PhD course
-\item[--]36-618: \hspace{5ex}\emph{Experimental Design \& Time Series} \hfill Head TA, MSc course
-\item[--]36-467/667:\hspace{0.25ex}  \emph{Special Topics: Data over Space \& Time} \hfill Head TA, MSc course
-\item[--]36-401/607: \hspace{0.25ex}\emph{Modern Regression} \hfill Head TA, BSc/MSc course
-\item[--]36-402/608: \hspace{0.25ex}\emph{Advanced Methods for Data Analysis} \hfill BSc/MSc course
-\item[--]36-225: \hspace{5ex}\emph{Introduction to Probability Theory} \hfill Head TA, BSc course
-\item[--]36-226: \hspace{5ex}\emph{Introduction to Statistical Inference} \hfill Head TA, BSc course
-\item[--]36-217: \hspace{5ex}\emph{Probability Theory and Random Processes} \hfill Head TA, BSc course
-\end{itemize}
-
-\vspace{0.05cm}
-
-\item[] \hspace{-2ex}{\it Lecturer} 
-
-\begin{itemize}[leftmargin=0.4cm]
-\item[--] {\bf Summer Lecture Series}, Carnegie Mellon University, Summer Undergraduate Research Experience in Statistics, Pittsburgh, PA. {\it Introduction to Statistics in R}. June -- July 2015.
-\item[--] {\bf Guest Lecture}, Carnegie Mellon University, STAT 217 (Probability Theory and Random Processes), Pittsburgh, PA. {\it Introduction to Markov Chains}. Nov. 2015.
-\item[--] {\bf Guest Lecture}, Carnegie Mellon University, STAT 401 (Modern Regression), Pittsburgh, PA. {\it Introduction to Programming in R and R Markdown}. Aug. 2017.
-\end{itemize}
-
-\vspace{0.1cm}
-
-\item[] \hspace{-2ex}\subheadingoneline{\it Research Advisor}{May 2015 -- August 2015}
-
-\begin{enumerate}[itemsep=-0.05ex,leftmargin=0.4cm]
-	\item[] Undergraduate student: Benjamin Leroy (received Ph.D. in Statistics \& Data Science from CMU in 2021)
-	\item[] Project: Dynamical Mass Measurements of Galaxy Clusters
-	\item[] Award: NSF Grant \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1043903&HistoricalAwards=false}{\#1043903}
-\end{enumerate}
-
-\end{itemize}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Professional Service}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{0.25cm}
@@ -528,13 +585,22 @@ I completed an end-to-end project which culminated in a new personalized ranking
 \vspace{.4cm}
 
 
+{\bf Program Chair}
+\indent\hspace{4.4ex}Serving as Program Chair-Elect for the ASA Astrostatistics Interest Group during\\
+\indent\hspace{23ex}the 2022-'23 academic year and Program Chair during the 2023-'24 year, culminat-\\
+\indent\hspace{23ex}ing with the organization of the full Astrostatistics program at the Joint Statistical\\
+\indent\hspace{23ex}Meetings 2024.
+
+\vspace{.2cm}
+
 {\bf Session Organizer}
-\indent\hspace{1.5ex}{\it Statistical Challenges in Cosmology}, JSM 2021, Seattle, WA.
+\indent\hspace{1.5ex}{\it Statistical Challenges in Cosmology}, Joint Statistical Meetings 2021, Seattle, WA.
 
 \vspace{.2cm}
 
 {\bf Session Chair}
-\indent\hspace{6.35ex}{\it Computing, Graphics, and Programming Statistics}, JSM 2017, Baltimore, MD.
+\indent\hspace{6.35ex}{\it Computing, Graphics, and Programming Statistics}, Joint Statistical Meetings 2017,\\
+\indent\hspace{23ex}Baltimore, MD.
 
 \vspace{.2cm}
 
@@ -572,7 +638,6 @@ I completed an end-to-end project which culminated in a new personalized ranking
 
 \end{addmargin}
 
-\vspace{-0.3cm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -581,13 +646,14 @@ I completed an end-to-end project which culminated in a new personalized ranking
 \vspace{-0.05cm}
 
 \begin{itemize}[leftmargin=0.6cm]
-\item[--]\myhref[blue]{https://www.cmu.edu/dietrich/news/news-stories/2017/november/statistics-datathons.html}{{\it CMU Statistics and Data Science Graduate Students Keep Winning Big}}
+\item\myhref[blue]{https://www.cmu.edu/dietrich/news/news-stories/2017/november/statistics-datathons.html}{{\it CMU Statistics and Data Science Graduate Students Keep Winning Big}}
 \vspace{-.15cm}
-\item[--]\myhref[blue]{http://www.espn.com/soccer/english-premier-league/23/blog/post/3858988/mr-indispensablefrom-lionel-messi-to-virgil-van-dijk-which-player-can-your-team-not-live-without}{Mr. Indispensable, from Lionel Messi to Virgil Van Dijk: Which player can your team not live without?} (Joint work with Francesca Matano, Lee Richardson, et al.)
+\item\myhref[blue]{https://www.espn.com/sports/insider/soccer/insider/story/_/id/33544904/cristiano-ronaldo-effect-do-man-united-portugal-benefit-today-version-superstar}{Cristiano Ronaldo effect: Are Man United, Portugal benefitting from today's version of the superstar?} (Joint work with Francesca Matano, Lee Richardson, et al.)
 \vspace{-.15cm}
-\item[--] \myhref{https://hackathon.nba.com/2017-hackathon-recap/}{{\it NBA Hackathon 2017 Recap}}
+\item\myhref[blue]{http://www.espn.com/soccer/english-premier-league/23/blog/post/3858988/mr-indispensablefrom-lionel-messi-to-virgil-van-dijk-which-player-can-your-team-not-live-without}{Mr. Indispensable, from Lionel Messi to Virgil Van Dijk: Which player can your team not live without?} (Joint work with Francesca Matano, Lee Richardson, et al.)
+\vspace{-.15cm}
+\item\myhref{https://hackathon.nba.com/2017-hackathon-recap/}{{\it NBA Hackathon 2017 Recap}}
 \end{itemize}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\heading{Extracurricular Activities}
